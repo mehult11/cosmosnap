@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:nasa_apod/Constant/KeyConst.dart';
-import 'package:nasa_apod/NASAPicture.dart';
-import 'package:nasa_apod/NASAPictureDataProvider.dart';
-import 'package:nasa_apod/RenderVideo.dart';
+import 'package:nasa_apod/Entity/NASAPicture.dart';
+import 'package:nasa_apod/DataProvider/NASAPictureDataProvider.dart';
+import 'package:nasa_apod/UI/Component/RenderVideo.dart';
 import 'package:readmore/readmore.dart';
 class SingleImageWgt extends StatefulWidget {
   final NASAPicture nasaPicture;

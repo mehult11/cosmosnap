@@ -1,9 +1,9 @@
 
 import 'dart:async';
 
-import 'package:nasa_apod/NASAPicture.dart';
-import 'package:nasa_apod/NASAPictureDao.dart';
-import 'package:nasa_apod/NASAPictureWebService.dart';
+import 'package:nasa_apod/Entity/NASAPicture.dart';
+import 'package:nasa_apod/DatabaseLayer/NASAPictureDao.dart';
+import 'package:nasa_apod/WebService/NASAPictureWebService.dart';
 
 class NASAPictureService{
 

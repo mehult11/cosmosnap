@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nasa_apod/Constant/LabelConstant.dart';
-import 'package:nasa_apod/Favorite/MyFavoriteImageListPage.dart';
-import 'package:nasa_apod/NASAPicture.dart';
-import 'package:nasa_apod/NASAPictureDataProvider.dart';
-import 'package:nasa_apod/SingleImageWgt.dart';
+import 'package:nasa_apod/Entity/NASAPicture.dart';
+import 'package:nasa_apod/DataProvider/NASAPictureDataProvider.dart';
+import 'package:nasa_apod/UI/Component/SingleImageWgt.dart';
+import 'package:nasa_apod/UI/Favorite/MyFavoriteImageListPage.dart';
 import 'package:nasa_apod/Util.dart';
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});

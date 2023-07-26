@@ -1,8 +1,8 @@
 
 import 'dart:async';
 
-import 'package:nasa_apod/NASAPicture.dart';
-import 'package:nasa_apod/NASAPictureService.dart';
+import 'package:nasa_apod/Entity/NASAPicture.dart';
+import 'package:nasa_apod/Service/NASAPictureService.dart';
 import 'package:rxdart/subjects.dart';
 class NASAPictureDataProvider{
 

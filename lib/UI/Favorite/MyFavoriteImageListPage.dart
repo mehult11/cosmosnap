@@ -2,8 +2,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:nasa_apod/Constant/LabelConstant.dart';
-import 'package:nasa_apod/Favorite/MyFavoriteImageDetailPage.dart';
-import 'package:nasa_apod/NASAPictureDataProvider.dart';
+import 'package:nasa_apod/DataProvider/NASAPictureDataProvider.dart';
+import 'package:nasa_apod/UI/Favorite/MyFavoriteImageDetailPage.dart';
 
 class MyFavoriteImageListPage extends StatefulWidget {
   const MyFavoriteImageListPage({super.key});

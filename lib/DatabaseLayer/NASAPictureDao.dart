@@ -1,4 +1,4 @@
-import 'package:nasa_apod/NASAPicture.dart';
+import 'package:nasa_apod/Entity/NASAPicture.dart';
 import 'package:nasa_apod/Database/DBHelper.dart';
 import 'package:sqflite/sqlite_api.dart';
 class NASAPictureDao{
