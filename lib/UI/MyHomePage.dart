@@ -13,7 +13,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   NASAPictureDataProvider nasaPictureDataProvider = NASAPictureDataProvider.instance;
-  var currentDate = DateTime.now();
+  var currentDate = Util.convertToUtc(DateTime.now());
   TextEditingController searchDateController = TextEditingController();
   NASAPicture? nasaPicture;
   DateTime? selectedDate;
@@ -94,6 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   firstDate: DateTime(2000),
                   lastDate: currentDate);
               if (selectedDate != null) {
+                selectedDate = Util.convertToUtc(selectedDate!);
                 String pickDateString = Util.getFormatedString(selectedDate!);
                 if(pickDateString != searchDateController.text){
                   setState(() {

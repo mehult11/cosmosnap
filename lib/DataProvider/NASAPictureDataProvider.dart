@@ -4,6 +4,7 @@ import 'dart:async';
 import 'package:nasa_apod/Entity/NASAPicture.dart';
 import 'package:nasa_apod/Service/NASAPictureService.dart';
 import 'package:rxdart/subjects.dart';
+import 'package:intl/intl.dart';
 class NASAPictureDataProvider{
 
   static NASAPictureDataProvider? _instance;
