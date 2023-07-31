@@ -1,6 +1,7 @@
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:nasa_apod/Constant/KeyConst.dart';
 import 'package:nasa_apod/Constant/LabelConstant.dart';
 import 'package:nasa_apod/DataProvider/NASAPictureDataProvider.dart';
 import 'package:nasa_apod/UI/Favorite/MyFavoriteImageDetailPage.dart';
@@ -63,7 +64,8 @@ class _MyFavoriteImageListPageState extends State<MyFavoriteImageListPage> {
                           },
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(15),
-                            child: CachedNetworkImage(
+                            child: (imgList.elementAt(index).mediaType == KeyConst.imageType)?
+                            CachedNetworkImage(
                               key: UniqueKey(),
                               imageUrl: imgList.elementAt(index).url,
                               fit: BoxFit.cover,
@@ -77,6 +79,9 @@ class _MyFavoriteImageListPageState extends State<MyFavoriteImageListPage> {
                                 color: Colors.black12,
                                 child: Icon(Icons.error,color: Color(0xFF8C1D18)),
                               ),
+                            ) : Image.asset(
+                              'assets/images/video_placeholder.jpg', // Replace this with your video placeholder image
+                              fit: BoxFit.cover,
                             ),
                           ),
                         );

@@ -21,6 +21,13 @@ class _RenderVideoState extends State<RenderVideo> {
   }
 
   @override
+  void dispose() {
+    _controller.removeListener(() { });
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
